@@ -45,7 +45,7 @@ export default function AutoWebsiteReveal() {
           <div className="absolute inset-0 flex flex-col items-center justify-center pt-56 ">
             <div
               onClick={handlePlay}
-              className={`relative w-64 h-64 flex items-center justify-center cursor-pointer select-none
+              className={`absolute inset-0 flex items-center justify-center select-none
                 transition-opacity duration-500 ease-in-out transform hover:scale-105 animate-pulse opacity-80 ${
                   isFadingOut ? 'opacity-0' : ''
                 }`}
@@ -56,7 +56,7 @@ export default function AutoWebsiteReveal() {
               <img
                 src="/om.gif"
                 alt="Launch"
-                className="w-40 h-40 object-contain"
+                className="w-40 h-40 object-contain cursor-pointer"
               />
             </div>
           </div>
